@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 function Step1({ formData, setFormData, errors}) {
   return (
