@@ -44,7 +44,7 @@ export function useFormValidation(formData) {
     if (validator) {
       newErrors = validator();
     } else {
-      newErrors = {};  // if no validator for this step
+      newErrors = {};  // if no validator for this step then no errors
     }
 
     setErrors(newErrors);
