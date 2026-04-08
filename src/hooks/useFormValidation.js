@@ -12,7 +12,7 @@ export function useFormValidation(formData) {
       } else if (!formData.businessName.trim()) {
         newErrors.businessName = "Business Name is required";
       } else if (formData.businessName.trim().toLowerCase() === formData.rejectedBusinessName.toLowerCase()) {
-        newErrors.businessName = "This business name was already rejected, please choose a different one";
+        newErrors.businessName = "This Business Name was already rejected, please choose a different one";
       }
 
       if (!formData.fullName.trim()) newErrors.fullName = "Full Name is required";
