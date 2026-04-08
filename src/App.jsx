@@ -40,7 +40,7 @@ function App() {
 
   // function to clear business name and save the rejected one, then send the user back to step 1
   function handleRejection() {
-    setFormData({ ...formData, businessName: "", rejectedBusinessName: formData.businessName });
+    setFormData({ ...formData, businessName: "", rejectedBusinessName: formData.businessName.trim().toLowerCase() });  // trims and puts to lower case to avoid doing the same name with spaces or caps
     setStep(1);
   }
 
