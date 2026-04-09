@@ -13,7 +13,7 @@ function Step2({ formData, setFormData, errors }) {
     paymentContent = (
       <div>
         <button onClick={confirmPayment}>Confirm Payment</button>
-        {errors.paymentConfirmed && <p style={{ color: "red" }}>{errors.paymentConfirmed}</p>}
+        {errors.paymentConfirmed && <p className="error">{errors.paymentConfirmed}</p>}
       </div>
     );
   }
