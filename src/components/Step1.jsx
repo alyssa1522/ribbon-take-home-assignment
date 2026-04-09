@@ -1,8 +1,9 @@
 import React from "react";
 
-function Step1({ formData, setFormData, errors}) {
+function Step1({ formData, setFormData, errors }) {
   return (
     <div>
+      <label>Business Name</label>
       <input
         type="text"
         placeholder="Business Name"
@@ -11,6 +12,7 @@ function Step1({ formData, setFormData, errors}) {
       />
       {errors.businessName && <p style={{ color: "red" }}>{errors.businessName}</p>}
       <br />
+      <label>Full Name</label>
       <input
         type="text"
         placeholder="Full Name"
@@ -19,6 +21,7 @@ function Step1({ formData, setFormData, errors}) {
       />
       {errors.fullName && <p style={{ color: "red" }}>{errors.fullName}</p>}
       <br />
+      <label>Email</label>
       <input
         type="text"
         placeholder="Email"
@@ -27,6 +30,7 @@ function Step1({ formData, setFormData, errors}) {
       />
       {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
       <br />
+      <label>Business Address</label>
       <input
         type="text"
         placeholder="Business Address"
@@ -35,7 +39,7 @@ function Step1({ formData, setFormData, errors}) {
       />
       {errors.address && <p style={{ color: "red" }}>{errors.address}</p>}
     </div>
-    
+
   );
 }
 
