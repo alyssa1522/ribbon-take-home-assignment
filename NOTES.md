@@ -18,11 +18,11 @@ On the Step 3 review screen I show the user their business name, full name, emai
 
 ## What I'd Improve With More Time
 
-**Live validation** 
+**Live validation:** 
 Ideally, it would be cleaner and more user friendly to show errors as the user types instead of only showing them when they press Continue. This would make the form feel more responsive and give immediate feedback, preventing users from pressing Continue without knowing what needs to be fixed. 
 
-**Real progress bar**
+**Real progress bar:**
 I would have also liked to replace the text indicator with an actual visual bar. It would have been more clear to the user and just looked better overall.
 
-**Better error styling**
+**Better error styling:**
 I would have highlighted the input border in red instead of just showing text below. This especially matters in the rejection flow, when the user is sent back to Step 1. Even though the business name field is cleared, there's no red error indication unless they try to click Continue. It would be better to have the red error message already be visible right when they land back on the page. This also ties into adding live validation, which would also solve this problem. 
